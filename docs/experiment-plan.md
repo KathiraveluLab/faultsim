@@ -38,27 +38,27 @@ Systematically measure how three failure-detection strategies perform across a r
 - **Recovery time** — ticks between fault resolution and correct cluster view
 - **Messages per tick** — average message count across the run
 
-## Experiment Phases
+## Experiment Scenarios
 
-### Phase 1: Baseline Characterization
+### Baseline Characterization
 
 Run each strategy under clean network conditions (no jitter, no drops, no partitions) across cluster sizes. Establish baseline detection latency and confirm zero false positives.
 
-### Phase 2: Jitter Sensitivity
+### Jitter Sensitivity
 
 Fix cluster size at 10. Sweep jitter magnitude and distribution for each strategy. Measure false-positive rate and detection latency as jitter increases.
 
-### Phase 3: Partition Behavior
+### Partition Behavior
 
 Fix cluster size at 10. Introduce symmetric and asymmetric partitions of varying duration. Measure false-positive rate and recovery time.
 
-### Phase 4: Churn Stress
+### Churn Stress
 
 Fix cluster size at 25. Vary churn rates. Measure detection accuracy and messaging overhead.
 
-### Phase 5: Combined Adversarial
+### Combined Adversarial
 
-Select the two most stressful parameter combinations from phases 2–4. Run all strategies under these combined conditions across cluster sizes 10, 25, 50.
+Select the two most stressful parameter combinations from the jitter, partition, and churn scenarios. Run all strategies under these combined conditions across cluster sizes 10, 25, 50.
 
 ## Reproducibility
 

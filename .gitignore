@@ -28,3 +28,14 @@ docs/
 AGENTS.md
 CLAUDE.md
 NEXT.md
+
+# Design artifacts
+_paper
+_bmad
+
+# AI Agent files
+.claude
+.codex
+.cursor
+.agent
+.gemini
