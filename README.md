@@ -100,7 +100,3 @@ The engine, metrics export, seed sweeps, parameter sweeps, and plotting workflow
 ## Reproducibility
 
 Every run is deterministic for a given `(config, seed)` pair. A single `StdRng` is threaded through [src/scenario.rs](src/scenario.rs) into the engine and network model, and the `deterministic_replay` integration test guards against accidental nondeterminism.
-
-## Development
-
-Use short-lived branches for focused changes and merge them back into `main` once tests are passing. Keep noteworthy design or workflow decisions documented in [docs/logs/](docs/logs/).
